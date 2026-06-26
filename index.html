@@ -1,0 +1,1551 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adwokat Monika Gładysz – Kancelaria Adwokacka Wrocław</title>
+    <meta name="description" content="Kancelaria Adwokacka Adwokat Moniki Gładysz we Wrocławiu. Pomoc prawna dla klientów indywidualnych i firm. Tel: 507 842 820" />
+    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/G4stNPHC/482126063-1208467474612900-1411604803153244841-n-1.jpg">
+    
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN (Facebook icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+      :root {
+        --page: #F8F6F1;
+        --surface: #FFFFFF;
+        --warm: #FBF9F4;
+        --ink: #1C1912;
+        --stone: #4A4540;
+        --muted: #8A8278;
+        --gold: #B8952A;
+        --gold-light: #D4B050;
+        --gold-pale: #F0DFA0;
+        --gold-dark: #8A6E1C;
+        --border: #E0D8CC;
+        --border-strong: #C8BCB0;
+        --dark-section: #1C1912;
+        --rule-gold: rgba(184, 149, 42, 0.35);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: var(--page);
+        color: var(--stone);
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        line-height: 1.76;
+        font-size: 0.95rem;
+        overflow-x: hidden;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1060px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+      }
+
+      /* Headings & Labels */
+      .section-label {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 500;
+        font-size: 0.7rem;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--gold);
+        display: block;
+      }
+
+      .label-rule {
+        border: none;
+        border-top: 1px solid var(--border);
+        width: 56px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+      }
+
+      .label-rule-dark {
+        border: none;
+        border-top: 1px solid var(--rule-gold);
+        width: 56px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+      }
+
+      .h2-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+        letter-spacing: 0.01em;
+        color: var(--ink);
+        line-height: 1.15;
+      }
+
+      .title-rule-gold {
+        border: none;
+        border-top: 2px solid var(--gold);
+        width: 48px;
+        margin: 14px 0 24px 0;
+      }
+
+      .section-padding {
+        padding: 96px 0;
+      }
+
+      /* NAVIGATION */
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: rgba(248, 246, 241, 0.96);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border);
+        transition: transform 0.3s ease;
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding: 0 24px;
+        max-width: 1060px;
+        margin: 0 auto;
+      }
+
+      .nav-logo-group {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .nav-logo-img {
+        width: 36px;
+        height: 36px;
+        border-radius: 2px;
+        object-fit: cover;
+      }
+
+      .nav-logo-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.15;
+      }
+
+      .nav-logo-sub {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 300;
+        color: var(--muted);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      .nav-logo-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        color: var(--ink);
+        font-size: 1.1rem;
+        letter-spacing: 0.02em;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .nav-link {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+        text-transform: uppercase;
+      }
+
+      .nav-link:hover {
+        color: var(--ink);
+      }
+
+      .nav-phone {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: var(--gold);
+        letter-spacing: 0.05em;
+      }
+
+      .nav-phone:hover {
+        color: var(--ink);
+      }
+
+      .nav-hamburger {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        z-index: 1100;
+      }
+
+      .nav-hamburger span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: var(--ink);
+        margin: 5px 0;
+        transition: 0.3s ease;
+      }
+
+      /* Hamburger transform */
+      .nav-hamburger.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .nav-hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .nav-hamburger.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+
+      /* Mobile overlay menu */
+      .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--page);
+        z-index: 1050;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+      }
+
+      .mobile-overlay.active {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .mobile-overlay-link {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 2rem;
+        color: var(--ink);
+      }
+
+      .mobile-overlay-link:hover {
+        color: var(--gold);
+      }
+
+      .mobile-overlay-phone {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--gold);
+        margin-top: 16px;
+      }
+
+      /* HERO */
+      .hero-section {
+        background-color: var(--dark-section);
+        background-image: repeating-linear-gradient(0deg, rgba(184, 149, 42, 0.018) 0px, rgba(184, 149, 42, 0.018) 1px, transparent 1px, transparent 60px);
+        min-height: 100vh;
+        display: flex;
+        align-items: stretch;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-left {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px max(40px, 6vw) 100px max(40px, 8vw);
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-right {
+        width: 52%;
+        position: relative;
+      }
+
+      .hero-img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center top;
+        border-bottom: 4px solid var(--gold);
+        display: block;
+      }
+
+      .hero-h1-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+      }
+
+      .hero-title-main {
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        color: var(--page);
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        line-height: 1.05;
+        letter-spacing: 0.01em;
+      }
+
+      .hero-title-main.italic {
+        font-style: italic;
+      }
+
+      .hero-byline {
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-style: italic;
+        color: var(--gold);
+        font-size: clamp(1.8rem, 3.5vw, 3rem);
+        line-height: 1.1;
+        margin-top: 8px;
+      }
+
+      .hero-tagline {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 300;
+        color: rgba(248, 246, 241, 0.6);
+        font-size: 0.95rem;
+        line-height: 1.76;
+        margin-bottom: 32px;
+      }
+
+      .hero-actions {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 24px;
+        flex-wrap: wrap;
+      }
+
+      .hero-action-primary {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600;
+        color: var(--gold);
+        font-size: 0.9rem;
+        letter-spacing: 0.05em;
+      }
+
+      .hero-action-primary:hover {
+        color: var(--page);
+      }
+
+      .hero-action-secondary {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        color: rgba(248, 246, 241, 0.3);
+        font-size: 0.9rem;
+        letter-spacing: 0.05em;
+      }
+
+      .hero-action-secondary:hover {
+        color: rgba(248, 246, 241, 0.65);
+      }
+
+      .hero-sub-phone {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 300;
+        font-size: 0.8rem;
+        color: rgba(248, 246, 241, 0.25);
+        letter-spacing: 0.05em;
+      }
+
+      .hero-sub-phone:hover {
+        color: var(--gold);
+      }
+
+      /* ABOUT SECTION */
+      .about-section {
+        background-color: var(--surface);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .about-grid {
+        display: flex;
+        gap: 72px;
+        align-items: flex-start;
+      }
+
+      .about-left {
+        width: 55%;
+      }
+
+      .about-right {
+        width: 45%;
+      }
+
+      .about-body {
+        font-family: 'EB Garamond', serif;
+        font-size: 1.1rem;
+        line-height: 1.76;
+        color: var(--stone);
+        margin-bottom: 32px;
+      }
+
+      .about-body p {
+        margin-bottom: 16px;
+      }
+
+      .about-body p:last-child {
+        margin-bottom: 0;
+      }
+
+      .feature-row {
+        border-top: 1px solid var(--border);
+        padding: 16px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .feature-row:last-child {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .feature-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: var(--ink);
+        flex-shrink: 0;
+      }
+
+      .feature-desc {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        font-size: 0.85rem;
+        color: var(--muted);
+        text-align: right;
+      }
+
+      /* Contact Card in About */
+      .contact-card-dark {
+        background-color: var(--ink);
+        padding: 36px 32px;
+        border-radius: 2px;
+      }
+
+      .card-phone {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: var(--page);
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .card-phone:hover {
+        color: var(--gold);
+      }
+
+      .card-meta {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        font-size: 0.85rem;
+        color: rgba(248, 246, 241, 0.45);
+        display: block;
+      }
+
+      .card-meta.email {
+        margin-top: 14px;
+      }
+
+      .card-meta:hover {
+        color: var(--gold);
+      }
+
+      .card-meta.address {
+        margin-top: 8px;
+      }
+
+      .card-meta.address:hover {
+        color: rgba(248, 246, 241, 0.45);
+        cursor: default;
+      }
+
+      .card-rule-light {
+        border: none;
+        border-top: 1px solid rgba(248, 246, 241, 0.15);
+        margin: 18px 0;
+      }
+
+      .card-hours {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        color: rgba(248, 246, 241, 0.28);
+        font-size: 0.8rem;
+      }
+
+      /* PRACTICE AREAS */
+      .areas-section {
+        background-color: var(--page);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .practice-list {
+        border-top: 1px solid var(--border);
+        margin-bottom: 48px;
+      }
+
+      .practice-row {
+        border-bottom: 1px solid var(--border);
+        padding: 24px 0;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease, padding-left 0.3s ease;
+      }
+
+      .practice-row:hover {
+        background-color: var(--surface);
+        padding-left: 16px;
+      }
+
+      .practice-num {
+        font-family: 'Playfair Display', serif;
+        font-weight: 300;
+        color: var(--border-strong);
+        font-size: 3rem;
+        line-height: 1;
+        min-width: 80px;
+        transition: color 0.3s ease;
+      }
+
+      .practice-row:hover .practice-num {
+        color: var(--gold);
+      }
+
+      .practice-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        color: var(--ink);
+        font-size: 1.15rem;
+        flex: 1;
+        padding: 0 40px;
+      }
+
+      .practice-desc {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        color: var(--muted);
+        font-size: 0.85rem;
+        text-align: right;
+        max-width: 260px;
+      }
+
+      .practice-cta-bar {
+        background-color: var(--gold);
+        padding: 24px 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 2px;
+      }
+
+      .practice-cta-text {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 500;
+        color: var(--surface);
+        font-size: 1.15rem;
+      }
+
+      .practice-cta-btn {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600;
+        color: var(--surface);
+        font-size: 0.9rem;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        padding: 8px 20px;
+        border-radius: 2px;
+        white-space: nowrap;
+      }
+
+      .practice-cta-btn:hover {
+        background-color: var(--surface);
+        color: var(--gold);
+        border-color: var(--surface);
+      }
+
+      /* HOURS SECTION */
+      .hours-section {
+        background-color: var(--surface);
+        border-top: 1px solid var(--border);
+      }
+
+      .hours-container {
+        max-width: 860px;
+        margin: 0 auto;
+        display: flex;
+        gap: 80px;
+        align-items: flex-start;
+      }
+
+      .hours-left {
+        width: 50%;
+      }
+
+      .hours-right {
+        width: 50%;
+      }
+
+      .hours-text {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        color: var(--stone);
+        font-size: 0.95rem;
+        line-height: 1.76;
+      }
+
+      .hours-callout {
+        border-left: 3px solid var(--gold);
+        padding-left: 20px;
+        margin-top: 24px;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 400;
+        color: var(--stone);
+        font-size: 1.1rem;
+        line-height: 1.72;
+      }
+
+      .schedule-table {
+        border-top: 1px solid var(--border);
+        width: 100%;
+      }
+
+      .schedule-row {
+        padding: 13px 0;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+
+      .schedule-day {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        color: var(--ink);
+      }
+
+      .schedule-time {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600;
+        color: var(--gold);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .schedule-row.closed .schedule-time {
+        color: var(--border-strong);
+        font-weight: 400;
+      }
+
+      /* Active day highlight class */
+      .schedule-row.active {
+        border-left: 3px solid var(--gold);
+        padding-left: 12px;
+        background-color: var(--warm);
+      }
+
+      .schedule-row.active .schedule-day {
+        font-weight: 600;
+      }
+
+      .schedule-row.active .schedule-time {
+        color: var(--gold-dark);
+      }
+
+      /* REVIEWS SECTION */
+      .reviews-section {
+        background-color: var(--page);
+        border-top: 1px solid var(--border);
+      }
+
+      .reviews-grid {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 48px;
+        align-items: stretch;
+      }
+
+      .review-block {
+        border-left: 1px solid var(--border);
+        padding-left: 28px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .review-block:first-child {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .review-quote-icon {
+        font-family: 'Playfair Display', serif;
+        font-weight: 300;
+        color: var(--border-strong);
+        font-size: 5rem;
+        line-height: 0.7;
+        height: 40px;
+        user-select: none;
+      }
+
+      .review-quote {
+        font-family: 'EB Garamond', serif;
+        font-style: italic;
+        font-weight: 400;
+        color: var(--ink);
+        font-size: 1.1rem;
+        line-height: 1.72;
+        flex-grow: 1;
+      }
+
+      .review-rule {
+        border: none;
+        border-top: 1px solid var(--border);
+        width: 40px;
+        margin: 16px 0;
+      }
+
+      .review-stars {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 500;
+        color: var(--gold);
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+      }
+
+      .review-author {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 300;
+        color: var(--muted);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.10em;
+      }
+
+      .reviews-footer-btn {
+        display: block;
+        text-align: center;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 500;
+        font-size: 0.78rem;
+        letter-spacing: 0.22em;
+        color: var(--gold);
+        text-transform: uppercase;
+      }
+
+      .reviews-footer-btn:hover {
+        color: var(--ink);
+      }
+
+      /* CONTACT SECTION */
+      .contact-section {
+        background-color: var(--surface);
+        border-top: 1px solid var(--border);
+      }
+
+      .contact-grid {
+        display: flex;
+        gap: 64px;
+        align-items: flex-start;
+      }
+
+      .contact-left {
+        width: 48%;
+      }
+
+      .contact-right {
+        width: 52%;
+      }
+
+      .contact-body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        color: var(--stone);
+        font-size: 0.95rem;
+        line-height: 1.76;
+        margin-bottom: 24px;
+      }
+
+      .contact-row {
+        border-bottom: 1px solid var(--border);
+        padding: 18px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .contact-row:first-of-type {
+        border-top: 1px solid var(--border);
+      }
+
+      .contact-row-label {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 500;
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--muted);
+      }
+
+      .contact-row-value {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        color: var(--stone);
+        font-size: 0.95rem;
+      }
+
+      .contact-row-value.phone {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 1.15rem;
+        color: var(--ink);
+      }
+
+      .contact-row-value.phone:hover, 
+      .contact-row-value.email:hover, 
+      .contact-row-value.link:hover {
+        color: var(--gold);
+      }
+
+      .contact-cta-block {
+        margin-top: 24px;
+      }
+
+      .cta-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding: 14px 32px;
+        border-radius: 2px;
+        cursor: pointer;
+        border: none;
+      }
+
+      .cta-button.primary {
+        background-color: var(--ink);
+        color: var(--page);
+      }
+
+      .cta-button.primary:hover {
+        background-color: #2E2A20;
+        box-shadow: 0 4px 16px rgba(28, 25, 18, 0.2);
+      }
+
+      .cta-button.secondary {
+        background-color: transparent;
+        color: var(--stone);
+        border: 1px solid var(--border);
+        margin-top: 10px;
+      }
+
+      .cta-button.secondary:hover {
+        border-color: var(--gold);
+        color: var(--gold);
+      }
+
+      .map-container {
+        height: 400px;
+        border: 1px solid var(--border);
+        border-radius: 2px;
+        overflow: hidden;
+      }
+
+      .map-container iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      /* FOOTER */
+      .footer {
+        background-color: var(--dark-section);
+        border-top: 2px solid var(--gold);
+        padding: 32px 0;
+        color: rgba(248, 246, 241, 0.6);
+      }
+
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .footer-logo-group {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .footer-logo-img {
+        width: 28px;
+        height: 28px;
+        border-radius: 2px;
+        object-fit: cover;
+      }
+
+      .footer-logo-title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        color: var(--page);
+        font-size: 1rem;
+        letter-spacing: 0.02em;
+      }
+
+      .footer-tagline {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 300;
+        color: rgba(248, 246, 241, 0.3);
+        font-size: 0.8rem;
+      }
+
+      .footer-copy {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 300;
+        color: rgba(248, 246, 241, 0.2);
+        font-size: 0.75rem;
+      }
+
+      .footer-rule {
+        border: none;
+        border-top: 1px solid rgba(184, 149, 42, 0.15);
+        margin: 14px 0;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 300;
+        color: rgba(248, 246, 241, 0.2);
+        font-size: 0.75rem;
+        letter-spacing: 0.02em;
+      }
+
+      /* SCROLL REVEAL ANIMATIONS */
+      .reveal {
+        opacity: 0;
+        transform: translateY(8px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Stagger delays for lists & grids */
+      .practice-row:nth-child(1) { transition-delay: 0ms; }
+      .practice-row:nth-child(2) { transition-delay: 60ms; }
+      .practice-row:nth-child(3) { transition-delay: 120ms; }
+      .practice-row:nth-child(4) { transition-delay: 180ms; }
+      .practice-row:nth-child(5) { transition-delay: 240ms; }
+      .practice-row:nth-child(6) { transition-delay: 300ms; }
+
+      .review-block:nth-child(1) { transition-delay: 0ms; }
+      .review-block:nth-child(2) { transition-delay: 80ms; }
+      .review-block:nth-child(3) { transition-delay: 160ms; }
+
+      /* Avoid scrollbars when mobile menu is open */
+      body.no-scroll {
+        overflow: hidden;
+      }
+
+      /* RESPONSIVENESS */
+      @media (max-width: 992px) {
+        .hero-left {
+          padding: 80px 40px;
+        }
+        .about-grid, .contact-grid {
+          gap: 40px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .section-padding {
+          padding: 64px 0;
+        }
+
+        /* Nav mobile */
+        .nav-links, .nav-phone {
+          display: none;
+        }
+
+        .nav-hamburger {
+          display: block;
+        }
+
+        /* Hero mobile collapse */
+        .hero-section {
+          flex-direction: column-reverse;
+          min-height: auto;
+        }
+
+        .hero-left {
+          width: 100%;
+          padding: 48px 24px;
+        }
+
+        .hero-right {
+          width: 100%;
+          height: 50vh;
+        }
+
+        .hero-img {
+          height: 50vh;
+        }
+
+        /* About Section collapse */
+        .about-grid {
+          flex-direction: column;
+          gap: 40px;
+        }
+
+        .about-left, .about-right {
+          width: 100%;
+        }
+
+        /* Practice Areas collapse */
+        .practice-row {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+          padding: 16px 0;
+        }
+
+        .practice-num {
+          font-size: 2rem;
+          min-width: auto;
+        }
+
+        .practice-title {
+          padding: 0;
+        }
+
+        .practice-desc {
+          text-align: left;
+          max-width: 100%;
+        }
+
+        .practice-cta-bar {
+          flex-direction: column;
+          gap: 16px;
+          padding: 24px;
+          text-align: center;
+        }
+
+        /* Hours Section collapse */
+        .hours-container {
+          flex-direction: column;
+          gap: 40px;
+        }
+
+        .hours-left, .hours-right {
+          width: 100%;
+        }
+
+        /* Reviews collapse */
+        .reviews-grid {
+          flex-direction: column;
+          gap: 32px;
+        }
+
+        .review-block {
+          border-left: 1px solid var(--border) !important;
+          padding-left: 20px !important;
+        }
+
+        /* Contact Section collapse */
+        .contact-grid {
+          flex-direction: column;
+          gap: 48px;
+        }
+
+        .contact-left, .contact-right {
+          width: 100%;
+        }
+
+        /* Footer collapse */
+        .footer-top {
+          flex-direction: column;
+          text-align: center;
+          gap: 12px;
+        }
+
+        .footer-logo-group {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- STICKY NAVIGATION -->
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="#" class="nav-logo-group">
+          <img src="https://i.ibb.co/G4stNPHC/482126063-1208467474612900-1411604803153244841-n-1.jpg" alt="Logo Kancelarii" class="nav-logo-img">
+          <div class="nav-logo-text">
+            <span class="nav-logo-sub">ADWOKAT</span>
+            <span class="nav-logo-title">MONIKA GŁADYSZ</span>
+          </div>
+        </a>
+        
+        <div class="nav-links">
+          <a href="#about" class="nav-link">O Kancelarii</a>
+          <a href="#practice-areas" class="nav-link">Obszar Pomocy</a>
+          <a href="#hours" class="nav-link">Godziny</a>
+          <a href="#contact" class="nav-link">Kontakt</a>
+        </div>
+
+        <a href="tel:507842820" class="nav-phone">507 842 820</a>
+
+        <button class="nav-hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE FULLSCREEN OVERLAY -->
+    <div class="mobile-overlay">
+      <a href="#about" class="mobile-overlay-link">O Kancelarii</a>
+      <a href="#practice-areas" class="mobile-overlay-link">Obszar Pomocy</a>
+      <a href="#hours" class="mobile-overlay-link">Godziny</a>
+      <a href="#contact" class="mobile-overlay-link">Kontakt</a>
+      <a href="tel:507842820" class="mobile-overlay-phone">507 842 820</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section">
+      <div class="hero-left">
+        <span class="section-label">Wrocław · ul. Dmowskiego 3/8</span>
+        <hr class="label-rule-dark" />
+        
+        <div class="hero-h1-container">
+          <span class="hero-title-main">Kancelaria</span>
+          <span class="hero-title-main italic">Adwokacka</span>
+          <span class="hero-byline">Monika Gładysz</span>
+        </div>
+        
+        <hr class="label-rule-dark" />
+        <p class="hero-tagline">Pomoc prawna dla klientów indywidualnych i podmiotów gospodarczych. Wrocław.</p>
+        
+        <div class="hero-actions">
+          <a href="#contact" class="hero-action-primary">→ Umów konsultację</a>
+          <a href="#practice-areas" class="hero-action-secondary">→ Obszar pomocy</a>
+        </div>
+        
+        <a href="tel:507842820" class="hero-sub-phone">507 842 820</a>
+      </div>
+      
+      <div class="hero-right">
+        <img src="https://i.ibb.co/gbjvw6wQ/727381081-1626164896176487-1364492744561909997-n.jpg" alt="Adwokat Monika Gładysz" class="hero-img">
+      </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="about-grid">
+          
+          <div class="about-left reveal">
+            <span class="section-label">O KANCELARII</span>
+            <hr class="label-rule" />
+            <h2 class="h2-title">Pomoc prawna, której możesz zaufać.</h2>
+            <hr class="title-rule-gold" />
+            
+            <div class="about-body">
+              <p>Kancelaria Adwokacka Adwokat Moniki Gładysz świadczy kompleksową pomoc prawną zarówno klientom indywidualnym, jak i podmiotom gospodarczym.</p>
+              <p>Każda sprawa traktowana jest z pełnym zaangażowaniem i indywidualnym podejściem. Priorytetem jest skuteczna ochrona interesów Klientów.</p>
+            </div>
+
+            <div class="feature-rows">
+              <div class="feature-row">
+                <span class="feature-title">Klienci indywidualni</span>
+                <span class="feature-desc">kompleksowa pomoc prawna dla osób fizycznych</span>
+              </div>
+              <div class="feature-row">
+                <span class="feature-title">Podmioty gospodarcze</span>
+                <span class="feature-desc">obsługa prawna firm i przedsiębiorców</span>
+              </div>
+              <div class="feature-row">
+                <span class="feature-title">Pełne zaangażowanie</span>
+                <span class="feature-desc">indywidualne podejście do każdej sprawy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-right reveal" style="transition-delay: 150ms;">
+            <div class="contact-card-dark">
+              <span class="section-label">KONTAKT</span>
+              <hr class="label-rule-dark" />
+              
+              <a href="tel:507842820" class="card-phone">507 842 820</a>
+              <a href="mailto:monika@adwokatgladysz.eu" class="card-meta email">monika@adwokatgladysz.eu</a>
+              <span class="card-meta address">ul. Romana Dmowskiego 3/8, 50-203 Wrocław</span>
+              
+              <hr class="card-rule-light" />
+              <span class="card-hours">Poniedziałek – Piątek: 08:00 – 16:00</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AREAS OF LAW SECTION -->
+    <section id="practice-areas" class="areas-section section-padding">
+      <div class="container">
+        <span class="section-label">OBSZAR POMOCY PRAWNEJ</span>
+        <hr class="label-rule" />
+        <h2 class="h2-title">Zakres praktyki</h2>
+        <hr class="title-rule-gold" />
+
+        <div class="practice-list">
+          
+          <div class="practice-row reveal">
+            <div class="practice-num">01</div>
+            <div class="practice-title">Prawo cywilne</div>
+            <div class="practice-desc">umowy, odszkodowania, sprawy majątkowe</div>
+          </div>
+
+          <div class="practice-row reveal">
+            <div class="practice-num">02</div>
+            <div class="practice-title">Prawo rodzinne</div>
+            <div class="practice-desc">rozwody, alimenty, podział majątku</div>
+          </div>
+
+          <div class="practice-row reveal">
+            <div class="practice-num">03</div>
+            <div class="practice-title">Prawo karne</div>
+            <div class="practice-desc">obrona w postępowaniach karnych</div>
+          </div>
+
+          <div class="practice-row reveal">
+            <div class="practice-num">04</div>
+            <div class="practice-title">Prawo gospodarcze</div>
+            <div class="practice-desc">obsługa firm, spółek i przedsiębiorców</div>
+          </div>
+
+          <div class="practice-row reveal">
+            <div class="practice-num">05</div>
+            <div class="practice-title">Prawo pracy</div>
+            <div class="practice-desc">spory pracownicze, zwolnienia, mobbing</div>
+          </div>
+
+          <div class="practice-row reveal">
+            <div class="practice-num">06</div>
+            <div class="practice-title">Nieruchomości</div>
+            <div class="practice-desc">spory o własność, służebności, zniesienie współwłasności</div>
+          </div>
+
+        </div>
+
+        <div class="practice-cta-bar reveal">
+          <span class="practice-cta-text">Każda sprawa wymaga indywidualnej analizy — skonsultuj się z nami.</span>
+          <a href="tel:507842820" class="practice-cta-btn">507 842 820 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOURS SECTION -->
+    <section id="hours" class="hours-section section-padding">
+      <div class="container">
+        <span class="section-label">GODZINY PRACY</span>
+        <hr class="label-rule" />
+        <h2 class="h2-title">Kiedy jesteśmy</h2>
+        <hr class="title-rule-gold" />
+
+        <div class="hours-container">
+          
+          <div class="hours-left reveal">
+            <p class="hours-text">Kancelaria przyjmuje klientów od poniedziałku do piątku. W pilnych sprawach — zadzwoń.</p>
+            <div class="hours-callout">
+              Pierwsze spotkanie w celu omówienia sprawy jest konsultacją — prosimy o wcześniejszy kontakt telefoniczny.
+            </div>
+          </div>
+
+          <div class="hours-right reveal" style="transition-delay: 150ms;">
+            <div class="schedule-table">
+              
+              <div class="schedule-row">
+                <span class="schedule-day">Poniedziałek</span>
+                <span class="schedule-time">08:00 – 16:00</span>
+              </div>
+
+              <div class="schedule-row">
+                <span class="schedule-day">Wtorek</span>
+                <span class="schedule-time">08:00 – 16:00</span>
+              </div>
+
+              <div class="schedule-row">
+                <span class="schedule-day">Środa</span>
+                <span class="schedule-time">08:00 – 16:00</span>
+              </div>
+
+              <div class="schedule-row">
+                <span class="schedule-day">Czwartek</span>
+                <span class="schedule-time">08:00 – 16:00</span>
+              </div>
+
+              <div class="schedule-row">
+                <span class="schedule-day">Piątek</span>
+                <span class="schedule-time">08:00 – 16:00</span>
+              </div>
+
+              <div class="schedule-row closed">
+                <span class="schedule-day">Sobota</span>
+                <span class="schedule-time">ZAMKNIĘTE</span>
+              </div>
+
+              <div class="schedule-row closed">
+                <span class="schedule-day">Niedziela</span>
+                <span class="schedule-time">ZAMKNIĘTE</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="reviews-section section-padding">
+      <div class="container">
+        <span class="section-label">OPINIE KLIENTÓW</span>
+        <hr class="label-rule" />
+        <h2 class="h2-title">Zaufali nam</h2>
+        <hr class="title-rule-gold" />
+
+        <div class="reviews-grid">
+          
+          <div class="review-block reveal">
+            <span class="review-quote-icon">“</span>
+            <p class="review-quote">Zdecydowanie polecam — Profesjonalizm i życzliwe podejście do każdego Klienta.</p>
+            <hr class="review-rule" />
+            <div class="review-stars">★★★★★</div>
+            <span class="review-author">— Klient Kancelarii</span>
+          </div>
+
+          <div class="review-block reveal">
+            <span class="review-quote-icon">“</span>
+            <p class="review-quote">Zdecydowanie polecam! Indywidualne podejście do sprawy i pełne zaangażowanie.</p>
+            <hr class="review-rule" />
+            <div class="review-stars">★★★★★</div>
+            <span class="review-author">— Klient Kancelarii</span>
+          </div>
+
+          <div class="review-block reveal">
+            <span class="review-quote-icon">“</span>
+            <p class="review-quote">Pełen profesjonalizm i świetne podejście do każdego klienta. Polecam.</p>
+            <hr class="review-rule" />
+            <div class="review-stars">★★★★★</div>
+            <span class="review-author">— Klient Kancelarii</span>
+          </div>
+
+        </div>
+
+        <a href="https://www.facebook.com/adwokatmonikagladysz/reviews/?id=100063489762379&sk=reviews" target="_blank" rel="noopener noreferrer" class="reviews-footer-btn reveal">Więcej opinii na Facebooku →</a>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <span class="section-label">KONTAKT</span>
+        <hr class="label-rule" />
+        
+        <div class="contact-grid">
+          
+          <div class="contact-left reveal">
+            <h2 class="h2-title">Umów konsultację.</h2>
+            <hr class="title-rule-gold" />
+            <p class="contact-body">Zapraszamy do kontaktu telefonicznego lub mailowego. Kancelaria mieści się we Wrocławiu przy ul. Romana Dmowskiego 3/8.</p>
+            
+            <div class="contact-rows">
+              
+              <div class="contact-row">
+                <span class="contact-row-label">TELEFON</span>
+                <a href="tel:507842820" class="contact-row-value phone">507 842 820</a>
+              </div>
+
+              <div class="contact-row">
+                <span class="contact-row-label">E-MAIL</span>
+                <a href="mailto:monika@adwokatgladysz.eu" class="contact-row-value email">monika@adwokatgladysz.eu</a>
+              </div>
+
+              <div class="contact-row">
+                <span class="contact-row-label">ADRES</span>
+                <span class="contact-row-value">ul. Romana Dmowskiego 3/8, 50-203 Wrocław</span>
+              </div>
+
+              <div class="contact-row">
+                <span class="contact-row-label">FACEBOOK</span>
+                <a href="https://www.facebook.com/adwokatmonikagladysz" target="_blank" rel="noopener noreferrer" class="contact-row-value link">Adwokat Monika Gładysz →</a>
+              </div>
+
+            </div>
+
+            <div class="contact-cta-block">
+              <a href="tel:507842820" class="cta-button primary">Zadzwoń: 507 842 820</a>
+              <a href="mailto:monika@adwokatgladysz.eu" class="cta-button secondary">Napisz: monika@adwokatgladysz.eu</a>
+            </div>
+          </div>
+
+          <div class="contact-right reveal" style="transition-delay: 150ms;">
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.528792324755!2d17.019942677058232!3d51.11715353913652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9e3c3739165%3A0xa3f4413d4f90b726!2sRomana%20Dmowskiego%203%2Fm.%208%2C%2050-203%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1782475126965!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        
+        <div class="footer-top">
+          <div class="footer-logo-group">
+            <img src="https://i.ibb.co/G4stNPHC/482126063-1208467474612900-1411604803153244841-n-1.jpg" alt="Logo Kancelarii" class="footer-logo-img">
+            <span class="footer-logo-title">ADWOKAT MONIKA GŁADYSZ</span>
+          </div>
+          <span class="footer-tagline">Kancelaria Adwokacka · Wrocław</span>
+          <span class="footer-copy">© 2026</span>
+        </div>
+
+        <hr class="footer-rule" />
+
+        <div class="footer-bottom">
+          ul. Romana Dmowskiego 3/8, 50-203 Wrocław · 507 842 820 · monika@adwokatgladysz.eu
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        
+        // 1. Mobile Menu Toggle
+        const hamburger = document.querySelector('.nav-hamburger');
+        const mobileOverlay = document.querySelector('.mobile-overlay');
+        const overlayLinks = document.querySelectorAll('.mobile-overlay-link');
+
+        if (hamburger && mobileOverlay) {
+          const toggleMenu = () => {
+            hamburger.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+          };
+
+          hamburger.addEventListener('click', toggleMenu);
+
+          overlayLinks.forEach(link => {
+            link.addEventListener('click', () => {
+              hamburger.classList.remove('active');
+              mobileOverlay.classList.remove('active');
+              document.body.classList.remove('no-scroll');
+            });
+          });
+        }
+
+        // 2. Highlight Active Day
+        const dayIndex = new Date().getDay(); // 0 is Sun, 1 is Mon, 2 is Tue, 3 is Wed, 4 is Thu, 5 is Fri, 6 is Sat
+        const scheduleRows = document.querySelectorAll('.schedule-row');
+        
+        // Map: Monday (1) -> Row 0, Tuesday (2) -> Row 1, ..., Saturday (6) -> Row 5, Sunday (0) -> Row 6
+        let activeRowIndex = -1;
+        if (dayIndex >= 1 && dayIndex <= 6) {
+          activeRowIndex = dayIndex - 1;
+        } else if (dayIndex === 0) {
+          activeRowIndex = 6;
+        }
+
+        if (activeRowIndex !== -1 && scheduleRows[activeRowIndex]) {
+          scheduleRows[activeRowIndex].classList.add('active');
+        }
+
+        // 3. Scroll Reveal with IntersectionObserver
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        if ('IntersectionObserver' in window) {
+          const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+          };
+
+          const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Animates only once
+              }
+            });
+          }, observerOptions);
+
+          revealElements.forEach(element => {
+            observer.observe(element);
+          });
+        } else {
+          // Fallback if IntersectionObserver is not supported
+          revealElements.forEach(element => {
+            element.classList.add('active');
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
